@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishav Portfolio</title>
+    <title>John Kendric - Dynamic Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -15,7 +17,7 @@
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Services</a></li> 
+                    <li><a href="#skills">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -29,20 +31,29 @@
     <main>
         <section id="home" class="hero container">
             <div class="hero-image">
-                <img src="/images/profile.JPG" alt="John Kendric Profile Picture">
+                <img src="images/profile.jpg" alt="Rishav Raj Verma" id="profile-img">
             </div>
+
+            <!-- Modal / Lightbox for zoom -->
+            <div id="image-modal" class="image-modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
+
             <div class="hero-content">
                 <p>Hello, It's Me</p>
                 <h1>Rishav Raj <span>Verma</span></h1>
                 <p>And I'm a <span id="typed-text"></span></p>
                 <p>Building beautiful and functional Software with a focus on user experience and clean code.</p>
                 <ul class="social-links">
-                    <li><a href="https://github.com/Rishav-Shrivastava" aria-label="Github"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://x.com/Cute_rishav" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/share/1GRmpvaATX/" aria-label="Dribbble"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/rishav-raj-verma-693103265/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Rishav-Shrivastava" aria-label="Github"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
-                <a href="https://drive.google.com/file/d/1mmIl3_FDlqv6ke0ko3BsnsnrruH_sfZA/view?usp=sharing" class="btn" download>Download CV</a>
+                <a href="https://drive.google.com/file/d/1mmIl3_FDlqv6ke0ko3BsnsnrruH_sfZA/view?usp=sharing" class="btn"
+                    download>Download CV</a>
             </div>
         </section>
 
@@ -50,7 +61,9 @@
             <h2>About <span>Me</span></h2>
             <div class="about-me">
                 <h3>MCA <span>Sudent</span></h3>
-                <p>I Currently parsuing MCA from Guru Ghasidas Vishvidyalya, Bilaspur, Chhatisgarh. I learn many subject like AI, ML, Neural Network, Data Mining & Data Warehouse, Data Science and many more. I thanks to my teacher to taught me many subject and guide me for many Projects and Model.</p>
+                <p>I Currently parsuing MCA from Guru Ghasidas Vishvidyalya, Bilaspur, Chhatisgarh. I learn many subject
+                    like AI, ML, Neural Network, Data Mining & Data Warehouse, Data Science and many more. I thanks to
+                    my teacher to taught me many subject and guide me for many Projects and Model.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </section>
@@ -83,7 +96,7 @@
                     <p>Problem Solving</p>
                 </div>
             </div>
-            
+
             <h2 style="margin-top: 80px;">What I <span>Do</span></h2>
             <div class="services-grid">
                 <div class="service-card">
@@ -117,28 +130,50 @@
             <h2>Latest <span>Project</span></h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=E-Commerce+Site" alt="Exit Poll Prediction">
-                    <div class="overlay"><h3>Exit Poll Prediction Model</h3><p>AI/ML with Python with Datasets </p></div>
+                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=E-Commerce+Site"
+                        alt="Exit Poll Prediction">
+                    <div class="overlay">
+                        <h3>Exit Poll Prediction Model</h3>
+                        <p>AI/ML with Python with Datasets </p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Dashboard+UI" alt="Bank Management System">
-                    <div class="overlay"><h3>Bank Management System</h3><p>GUI Based Application by using JavaSwing</p></div>
+                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Dashboard+UI"
+                        alt="Bank Management System">
+                    <div class="overlay">
+                        <h3>Bank Management System</h3>
+                        <p>GUI Based Application by using JavaSwing</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Mobile+App+Design" alt="College Website">
-                    <div class="overlay"><h3>College Website</h3><p>Python Flask with Database Connectivity</p></div>
+                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Mobile+App+Design"
+                        alt="College Website">
+                    <div class="overlay">
+                        <h3>College Website</h3>
+                        <p>Python Flask with Database Connectivity</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Blog+Platform" alt="Blog Website">
-                    <div class="overlay"><h3>Blog Website</h3><p>Python Flask</p></div>
+                    <div class="overlay">
+                        <h3>Blog Website</h3>
+                        <p>Python Flask</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Branding+Website" alt="Voting System">
-                    <div class="overlay"><h3>Voting System</h3><p>Python Thinker</p></div>
+                    <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=Branding+Website"
+                        alt="Voting System">
+                    <div class="overlay">
+                        <h3>Voting System</h3>
+                        <p>Python Thinker</p>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="https://via.placeholder.com/400x250/00bcd4/16213e?text=SAAS+Landing+Page" alt="Quiz">
-                    <div class="overlay"><h3>Quiz</h3><p>C Programming</p></div>
+                    <div class="overlay">
+                        <h3>Quiz</h3>
+                        <p>C Programming</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -169,8 +204,7 @@
             <p>&copy; 2023 Rishav Shrivastava. All rights reserved.</p>
         </div>
     </footer>
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
-
