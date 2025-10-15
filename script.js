@@ -152,3 +152,18 @@ if (profileImg && imageModal && modalImg) {
         }
     });
 }
+
+// Contact Form Submission with EmailJS
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();  // Prevent default form submission
+        emailjs.sendForm('service_4yx8re6', 'template_lfvse6k', contactForm, 'r74OcD7Im6mSK8Hgz')
+            .then((response) => {
+                alert('Message sent successfully! Thank you.');
+                contactForm.reset();  // Clear the form
+            }, (error) => {
+                alert('Failed to send message. Please try again later. Error: ' + error.text);
+            });
+    });
+}
